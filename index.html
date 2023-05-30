@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang= "pt-br">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Decodificador - Alura</title>
+		<link rel= "stylesheet" href="style.css">
+		<link rel= "stylesheet" href="reset.css">
+        <style> @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap'); </style>
+	</head>
+
+	<body>
+        <main>
+            <div class="container">
+                <header>
+                    <img class="Logo_Alura" src="imagens/logoAlura.png" alt="Logo da Alura">
+                </header>
+
+                <section class="entrada-mensagem">
+                    <textarea class="entrada" placeholder="Digite seu texto"></textarea>
+                    
+                    <div class="informação">
+                        <p>Apenas letras minúsculas e sem acento</p>
+                    </div> 
+                    
+                    <div class="decodificadores">
+                        <button id="button-cripto">Criptografar</button>
+                        <button id="button-descripto">Descriptografar</button>
+                    </div>
+
+                </section>
+
+                <section class="saida-mensagem">
+                    <div class="tela-inicial">  
+                        <img class="Boneco" src="imagens/boneco.png" alt= "Boneco">
+                        <h1>Nenhuma mensagem encontrada</h1>
+                        <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+                    </div> 
+                    
+                    <div class="tela-final">
+                        <textarea class="saida"></textarea>
+                        <button id="button-copy">Copiar</button>
+                    </div>
+                </section>
+            </div>
+
+            <script src="script.js"></script>
+        </main>
+        
+    <footer>
+        &copy; Copyleft 2023 - The Developer's Rosi
+    </footer>
+</body>
+</html>

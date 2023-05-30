@@ -1,0 +1,239 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #F3F5FC;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.container {
+    display: flex;
+    height: 92vh;
+    justify-content: center;
+    margin-top: 4vh;
+}
+
+header{
+    display: flex;
+    height: 70px;
+}
+
+.entrada-mensagem{
+    margin-left: 5%;
+    width: 700px;
+}
+
+.entrada{
+    width: 100%;
+    height: 50vh;
+    margin: 80px 0 10vh 0;
+    background:  #F3F5FC;
+    border: none;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;  
+}
+
+.entrada::placeholder{
+    color: #0A3871;  
+}
+
+.informação{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.informação p{
+    width: 228px;
+    height: 18px;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.decodificadores{
+    display: flex;
+    width: 100%;
+    gap:24px;
+  
+}
+
+
+#button-cripto, #button-descripto, #button-copy{  
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    height: 67px;
+    width: 90%;
+    border-radius: 24px;
+    padding: 24px;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+   
+}
+
+#button-cripto{
+    background:#0A3871;
+    color: #FFFFFF;
+   
+}
+
+#button-descripto{
+    background: #D8DFE8;
+    color: #0A3871;  
+}
+
+.saida-mensagem{
+    width: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+    padding: 0 4.5vh;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.saida-mensagem:focus{
+    outline: none;
+}
+
+.tela-inicial img{
+    width: 100%;
+}
+
+.tela-inicial h1, p{
+    margin: 10px 0;
+    flex: none;
+    align-self: stretch;
+    flex-grow: 0;
+    text-align: center;
+}
+
+.tela-inicial h1{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #343A40;
+}
+
+.tela-inicial p{
+    height: 48px;
+    font-size: 16px;    
+    line-height: 150%;
+    color: #495057;
+    order: 1;
+}
+
+.saida{
+    width: 100%;
+    height: 70vh;
+    color: #495057;
+    font-size: 24px;
+    line-height: 150%;
+    border: none;
+    display: none;
+}
+
+#button-copy{
+    width: 100%;
+    background: #FFFFFF;
+    color: #0A3871;
+    display: none;
+    margin-top: 32px;
+}
+
+
+@media screen and (max-width:1000px){
+    .container {
+        flex-direction:column; 
+        width:90%; 
+        height: 100%;
+    }
+    .entrada-mensagem {
+        margin:20px 0;
+        width:100%;
+    }
+    .entrada{
+        height: 20vh;
+    }
+    .tela-inicial img {
+        display:none;
+    }
+    .tela-final {
+        width: 100%;
+    }
+    .saida-mensagem {
+        width:100%;
+        margin-left:0;
+        display:block;
+    }
+    .saida{
+        height: 25vh;
+    }
+
+}
+
+@media screen and (max-width:480px){
+    .container {
+        flex-direction:column; 
+        width:90%;
+        height: 100%;
+        margin-left: 5%;
+    }
+    .entrada-mensagem {
+        margin:20px 0;
+        width:100%;
+    }
+    .entrada{
+        height: 20vh;
+    }
+    .tela-inicial img {
+        display:none;
+    }
+    .tela-final {
+        width: 100%;
+    }
+    .saida-mensagem {
+        width:90%;
+        margin-left:0;
+        display:block;
+    }
+    .saida{
+        height: 25vh;
+    }
+    .decodificadores{
+        display:block;
+    }
+    #button-cripto{
+        margin-bottom: 14px;
+    }
+   
+}
+
+footer {
+    height: 80px;
+    color: #0A3871;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
